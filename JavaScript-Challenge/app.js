@@ -1,10 +1,8 @@
 var tableData = data;
 console.log(tableData);
 
-// Get a reference to the table body
 var tbody = d3.select("tbody");
 
-// Console.log the weather data from data.js
 console.log(data);
 
  data.forEach(function(sightingReport) {
@@ -20,9 +18,7 @@ console.log(data);
 
  var submit = d3.select("#submit");
 
- // function to take input and recreate table
  submit.on("click", function() {
-   // stops page from refreshing
    d3.event.preventDefault();
  
    d3.select(".summary").html("");
